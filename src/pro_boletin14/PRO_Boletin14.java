@@ -23,8 +23,6 @@
  * GRACIAS POR USAR NUESTRO APARCAMIENTO 
  */
 package pro_boletin14;
-
-import javax.swing.JOptionPane;
 /**
  *
  * @author abrandarizdominguez
