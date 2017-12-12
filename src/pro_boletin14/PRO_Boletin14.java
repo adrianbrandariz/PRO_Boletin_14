@@ -9,7 +9,7 @@
  * En el caso contrario pondríamos un mensaje “ COMPLETO “.
  *
  * Para hacer más fácil el programa, suponer que el garaje tiene capacidad para 5 coches.
- * Para calcular el precio do aparcamiento, considerad el siguiente:
+ * Para calcular el precio do aparcamiento, considerad el siguiente ejemplo:
  * Primeras 3 horas. ----> 1.5 €
  * El resto del tiempo: pagamos 0.20 € cada hora.
  * La salida será:
@@ -23,6 +23,8 @@
  * GRACIAS POR USAR NUESTRO APARCAMIENTO 
  */
 package pro_boletin14;
+
+import javax.swing.JOptionPane;
 /**
  *
  * @author abrandarizdominguez
@@ -30,7 +32,15 @@ package pro_boletin14;
 public class PRO_Boletin14 {
     
     public static void main(String[] args) {
-        // TODO code application logic here
+        /* 
+         * Se crea un objeto de tipo Garaje y se asignan sus valores.
+         * Especificando, en este caso, que el garaje estará compuesta por 10 plazas y
+         * estarán en uso 0.
+         */ 
+        Garaje gar1 = new Garaje(10, 0);
+        gar1.aparcarCoche();
+
+                
     }
     
 }
