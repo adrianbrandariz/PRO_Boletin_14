@@ -45,7 +45,7 @@ public class Garaje{
     public void aparcarCoche(){
         // Estructura condicional que validará si hay plazas disponibles en el garaje.
         if (plazas>numeroCoches){
-            JOptionPane.showInputDialog("HAY PLAZAS DISPONIBLES.");
+            JOptionPane.showMessageDialog(null,"HAY PLAZAS DISPONIBLES.");
             matricula = JOptionPane.showInputDialog("Bienvenido.\n Por favor, introduzca el número de la mátricula del vehículo.");
             // Se pide el tiempo que estará el vehículo en el garaje y calculará el precio que costará
             int tiempo = Integer.parseInt(JOptionPane.showInputDialog("Introduzca el tiempo que se ha quedado el vehículo en el garaje:"));
@@ -70,7 +70,7 @@ public class Garaje{
                     " * GRACIAS POR USAR NUESTRO APARCAMIENTO ");
         }
         else{
-            JOptionPane.showInputDialog("GARAJE COMPLETO.");
+            JOptionPane.showMessageDialog(null,"GARAJE COMPLETO.");
         }
     }
 }
