@@ -43,19 +43,21 @@ public class Garaje{
     }
     // Método "aparcarCoche" que muestra si hay plazas disponibles en un garaje:
     public void aparcarCoche(){
+        // Estructura condicional que validará si hay plazas disponibles en el garaje.
         if (plazas>numeroCoches){
             JOptionPane.showInputDialog("HAY PLAZAS DISPONIBLES.");
-            String matricula = JOptionPane.showInputDialog("Bienvenido.\n Por favor, introduzca el número de la mátricula del vehículo.");
+            matricula = JOptionPane.showInputDialog("Bienvenido.\n Por favor, introduzca el número de la mátricula del vehículo.");
+            // Se pide el tiempo que estará el vehículo en el garaje y calculará el precio que costará
             int tiempo = Integer.parseInt(JOptionPane.showInputDialog("Introduzca el tiempo que se ha quedado el vehículo en el garaje:"));
                 if (tiempo<=3){
-                    double precio = 1.5;
+                    precio = 1.5;
                 }
                 else{
-                    double precio = 1.5 + tiempo*0.20;
+                    precio = 1.5 + tiempo*0.20;
                 }
             // Se pide el dinero y se añade una condición para que la cantidad sea la correcta.
             do{
-                double dineroRecibido = Double.parseDouble(JOptionPane.showInputDialog("La cantidad a pagar es "+precio+"\n Introduce la cantidad a pagar:"));
+                dineroRecibido = Double.parseDouble(JOptionPane.showInputDialog("La cantidad a pagar es "+precio+"\n Introduce la cantidad a pagar:"));
             } while (dineroRecibido<precio);
             JOptionPane.showInputDialog("CANTIDAD ACEPTADA\n"
                     + " * FACTURA *\n" +
